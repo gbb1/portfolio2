@@ -1,0 +1,16 @@
+@keyframes slideIn {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.slide-in {
+  animation-name: slideIn;
+  animation-duration: 1.2s;
+  animation-iteration-count: once;
+}
