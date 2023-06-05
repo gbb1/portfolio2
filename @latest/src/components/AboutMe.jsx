@@ -5,7 +5,7 @@ import '../App.css';
 
 const AboutMe = () => {
   return (
-    <div className="border-2 flex flex-col gap-2 py-2">
+    <div className="flex flex-col gap-2 pt-2">
       <div className="font-bold text-4xl">
         Hi! I'm Gabe.
       </div>

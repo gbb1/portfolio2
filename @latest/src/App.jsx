@@ -19,7 +19,7 @@ function App() {
     <div className="w-screen h-screen overflow-x-hidden bg-gradient-to-b from-white to-gray-200">
       <TopBar />
       <div className="flex justify-center">
-        <div className="flex flex-col justify-center w-[600px] border-2 gap-2">
+        <div className="flex flex-col justify-center w-[600px] border-2 gap-4">
           <AboutMe />
           <Details />
           <Experience />

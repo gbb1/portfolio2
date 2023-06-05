@@ -10,6 +10,7 @@ const Survey = () => {
     1: 5,
     2: 10,
     3: 85,
+    'correct': 3,
   })
 
 
@@ -37,9 +38,9 @@ const Survey = () => {
           <div className="w-full hover:bg-gray-100" onClick={handleClick}>
             <div className="flex">
               <div id={1} className={` ${(choice !== 1 && choice) ? `opacity-70` : ''} transition-all rounded-lg border-2 box-border px-4 py-3 w-full cursor-pointer select-none`}>
-              Example...
+              I reduced latency by over 95% by combining PostgreSQL aggregation queries, denormalization, and indexing.
               </div>
-              <div className={`bg-green-200 ${choice ? `w-[${votes[1]}%] slide-in ` : 'w-[0px]'} ${choice === 1 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
+              <div className={`bg-green-200 ${choice ? `w-[${votes[1]}%] slide-in ` : 'w-[0px]'} ${votes.correect === 1 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
               </div>
             </div>
           </div>
@@ -47,9 +48,9 @@ const Survey = () => {
           <div className="w-full hover:bg-gray-100" onClick={handleClick}>
             <div className="flex">
               <div id={2} className={` ${(choice !== 2 && choice) ? `opacity-70` : ''} transition-all rounded-lg border-2 box-border px-4 py-3 w-full cursor-pointer select-none`}>
-              I helped Facebook acquire 50K+ advertisers by supporting the launch of over 20 growth products and features.
+              I helped Facebook acquire 50K+ advertisers by supporting UI/UX for over 20 growth products and features.
               </div>
-              <div className={`bg-green-200 ${choice ? `w-[${votes[2]}%] slide-in ` : 'w-[0px]'} ${choice === 2 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
+              <div className={`bg-green-200 ${choice ? `w-[${votes[2]}%] slide-in ` : 'w-[0px]'} ${votes.correect === 2 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
               </div>
             </div>
           </div>
@@ -59,7 +60,7 @@ const Survey = () => {
               <div id={3} className={` ${(choice !== 3 && choice) ? `opacity-70` : ''} transition-all rounded-lg border-2 box-border px-4 py-3 w-full cursor-pointer select-none`}>
                 Correlation actually does imply causation.
               </div>
-              <div className={`${choice ? `w-[${votes[3]}%] slide-in ` : 'w-[0px]'} ${choice === 3 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
+              <div className={`${choice ? `w-[${votes[3]}%] slide-in ` : 'w-[0px]'} ${votes.correct === 3 ? `bg-green-200` : 'bg-red-200'} -ml-[100%] rounded-lg opacity-50`}>
               </div>
             </div>
           </div>
