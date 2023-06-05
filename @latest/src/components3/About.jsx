@@ -28,7 +28,7 @@ const ServiceCard = ({ title, index, icon }) => {
               <ul className="menu w-full rounded-box gap-2">
                 <li><a className="rounded-lg border-2">Item 1</a></li>
                 <li><a className="rounded-lg border-2">Item 2</a></li>
-                <li><a className="rounded-lg border-2">Correlation does actually imply causation.</a></li>
+                <li><a className="rounded-lg border-2"><div>Correlation does actually imply causation.</div></a></li>
               </ul>
             </div>
 
