@@ -14,3 +14,10 @@
   animation-duration: 1.2s;
   animation-iteration-count: once;
 }
+
+.circle-img {
+  width: min(10vh, 10vw);
+  height: min(10vh, 10vw);
+  max-width: min(10vw, 50px);
+  max-height: min(10vw, 50px);
+}

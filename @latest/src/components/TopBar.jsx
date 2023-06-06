@@ -6,26 +6,36 @@ import '../App.css';
 
 const TopBar = () => {
   return (
-    <div className="bg-white flex flex-row w-full justify-center items-center gap-10 min-h-min h-[40px] p-5">
-      <div className="scale-[200%] min-h-min border-2">
+    <div className="bg-transparent z-[1000] flex flex-row w-full fixed justify-end b-10 items-center h-[6vh] p-10 border-box">
+{/*
+      <div className="scale-[150%] min-h-min">
         <ImLinkedin />
       </div>
-      <div className="scale-[200%] min-h-min border-2">
-        <FaGithub />
-      </div>
 
-      <ul className="menu menu-horizontal bg-white rounded-box">
-        <li>
-          <a className="rounded-[10000px] w-12 h-12">
-            <ImLinkedin />
-          </a>
-        </li>
-        <li>
-          <a className="rounded-[10000px] w-12 h-12">
-            <FaGithub />
-          </a>
-        </li>
-      </ul>
+      <div className="scale-[150%] min-h-min">
+        <FaGithub />
+      </div> */}
+      <div className="shadow-lg rounded-[1000px] bg-white p-2 px-4 items-center flex flex-row gap-4">
+        <ul className="menu menu-horizontal bg-transparent rounded-box">
+          <li>
+            <a className="rounded-[10000px] w-12 h-12">
+              <div className="scale-[150%] min-h-min">
+                <ImLinkedin color="black" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a className="rounded-[10000px] w-12 h-12">
+              <div className="scale-[150%] min-h-min">
+                <FaGithub color="black" />
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <button className="btn justify-self-end rounded-[1000px] bg-black">Get in touch</button>
+        <button className="btn justify-self-end rounded-[1000px] bg-black">View resume</button>
+      </div>
     </div>
   )
 }
