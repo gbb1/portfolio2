@@ -6,20 +6,21 @@ import { GrCode } from 'react-icons/gr'
 import { HiOutlineDatabase } from 'react-icons/hi'
 
 import '../App.css';
-
+import './ref.css';
 
 const Details = () => {
+
   return (
-    <div className="flex flex-col w-full bg-white rounded-[20px] shadow-lg p-6">
+    <div className="flex flex-col w-full bg-white rounded-[20px] shadow-lg p-4 md:p-6">
       <div className="flex flex-row items-center">
         <div className="flex flex-row items-center gap-3">
-          <MdOutlineCake style={{ fontSize: '24px' }} />
-          <span>26</span>
+          <MdOutlineCake className="icon"  />
+          <span className="text-[12px] md:text-[16px]">26</span>
         </div>
-        <hr className="bg-base-300 rounded-[100px] mx-4" style={{ height: '100%', width: '2px' }}></hr>
+        <hr className="bg-base-300 rounded-[100px] mx-2 md:mx-4" style={{ height: '100%', width: '2px' }}></hr>
         <div className="flex flex-row items-center gap-3">
-          <HiOutlineLocationMarker style={{ fontSize: '24px' }} />
-          <span>Open to remote, relocating</span>
+          <HiOutlineLocationMarker className="icon" />
+          <span className="text-[12px] md:text-[16px]">Open to remote, relocating</span>
         </div>
         {/* <hr className="bg-base-300 rounded-[100px] mx-4" style={{ height: '100%', width: '2px' }}></hr>
         <div className="flex flex-row items-center gap-3">
@@ -27,21 +28,21 @@ const Details = () => {
           <span>Open to relocating</span>
         </div> */}
       </div>
-      <hr className="bg-base-300 rounded-[100px] my-4" style={{ height: '2px' }}></hr>
+      <hr className="bg-base-300 rounded-[100px] my-2 md:my-4" style={{ height: '2px' }}></hr>
       <div className="flex flex-row items-center gap-3">
-        <LuGraduationCap style={{ fontSize: '24px' }} />
-        <span>Universtity of Chicago: B.A. Statistics, Linguistics</span>
+        <LuGraduationCap className="icon"  />
+        <span className="text-[12px] md:text-[16px]">Universtity of Chicago: B.A. Statistics, Linguistics</span>
       </div>
-      <hr className="bg-base-300 rounded-[100px] my-4" style={{ height: '2px' }}></hr>
+      <hr className="bg-base-300 rounded-[100px] my-2 md:my-4" style={{ height: '2px' }}></hr>
       <div className="flex flex-row items-center gap-3">
-        <GrCode style={{ fontSize: '24px' }} />
-        <span>Javascript, Typescript, React, HTML5, CSS</span>
+        <GrCode className="icon"  />
+        <span className="text-[12px] md:text-[16px]">Javascript, Typescript, React, HTML5, CSS</span>
       </div>
       {/*  */}
-      <hr className="bg-base-300 rounded-[100px] my-4" style={{ height: '2px' }}></hr>
+      <hr className="bg-base-300 rounded-[100px] my-2 md:my-4" style={{ height: '2px' }}></hr>
       <div className="flex flex-row items-center gap-3">
-        <HiOutlineDatabase style={{ fontSize: '24px' }} />
-        <span>SQL, PostgreSQL, MongoDB, Firestore</span>
+        <HiOutlineDatabase className="icon" />
+        <span className="text-[12px] md:text-[16px]">SQL, PostgreSQL, MongoDB, Firestore</span>
       </div>
       {/* <div className="divider"></div> */}
 

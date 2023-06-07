@@ -18,10 +18,21 @@ function App() {
   const [count, setCount] = useState(0)
 
   const navRef = useRef(null);
+  const backgroundRef = useRef(null);
 
   const scrollToRef = () => {
     if (navRef.current) {
       navRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
+  const scrollToBackground = () => {
+    console.log('clicked')
+    if (backgroundRef.current) {
+      backgroundRef.current.scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
@@ -36,11 +47,13 @@ function App() {
     <div className="w-screen h-screen overflow-x-hidden bg-gradient-to-b from-white to-gray-200">
       <TopBar />
       <div ref={navRef}></div>
-      <div className="flex justify-center mt-[10vh]">
-        <div className="flex flex-col justify-center max-w-[600px] w-[80%] gap-4">
-          <AboutMe />
+      <div className="flex justify-center mt-[12vh] md:mt-[10vh]">
+        <div className="flex flex-col justify-center max-w-[600px] w-[90%] md:w-[80%] gap-2 md:gap-4">
+          <AboutMe scroller4 = {scrollToBackground}/>
           <Details />
-          <Experience />
+          <div ref={backgroundRef} >
+            <Experience />
+          </div>
           <HackReactor />
           <Survey />
           <Projects />

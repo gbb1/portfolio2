@@ -13,22 +13,22 @@ const Footer = ({ scroller }) => {
   return (
     <div className="w-full bg-transparent flex justify-center flex-col mb-10 shadow-lg">
 
-      <div className="flex flex-col bg-white p-6 items-center rounded-[20px] w-full gap-2">
+      <div className="flex flex-col bg-white p-4 md:p-6 items-center rounded-[20px] w-full gap-2">
 
-        <div className="font-normal text-6xl mb-2 mt-2 h-min">
+        <div className="font-normal text-2xl md:text-6xl mb-2 mt-2 h-min">
           🤝
         </div>
 
 
-        <div className="font-normal text-2xl">
+        <div className="font-normal text-base md:text-2xl">
           Thanks for stopping by!
         </div>
 
-        <div className="">
+        <div className="text-xs md:text-base">
           Designed by Gabe Bennett-Brandt
         </div>
 
-        <div className="text-24 self-center p-2 mt-2" onClick={scroller}>
+        <div className="md:text-24 self-center p-2 mt-2" onClick={scroller}>
           <BsArrowUpCircle style={{ fontSize: '32px' }} />
         </div>
 

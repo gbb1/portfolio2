@@ -7,8 +7,8 @@ import Koalafi from '../assets/Koalafi.png'
 
 export default function Experience() {
   return (
-    <div className="flex flex-col w-full bg-white rounded-[20px] shadow-lg p-6 gap-2">
-      <div className="font-normal text-2xl mb-2 mt-2">
+    <div className="flex flex-col w-full bg-white rounded-[20px] shadow-lg p-4 md:p-6 gap-2">
+      <div className="font-normal text-base md:text-2xl mb-2 mt-2">
         Where I've worked:
       </div>
       <Job image={Koalafi} company={"Koalafi"} descriptions={['Fintech', 'SQL']} title={'Marketing Manager'} dateRange={'2021 - 2022'} />
