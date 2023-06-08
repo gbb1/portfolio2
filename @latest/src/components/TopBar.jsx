@@ -59,12 +59,7 @@ const TopBar = ({ barRef }) => {
               <FaGithub />
             </a>
           </div>
-          {/* <a className="scale-[150%]">
-            <HiOutlineMail />
-          </a>
-          <a className="scale-[150%]">
-            <IoDocumentTextOutline />
-          </a> */}
+
           <div className="flex flex-row gap-2">
           <button className="justify-self-end py-3 px-5 bg-black text-xs md:text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-green-400 hover:text-black dark:bg-primary-600 dark:hover:bg-primary-700">Get in touch</button>
           <button className="justify-self-end py-3 px-5 bg-black text-xs md:text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-green-400 hover:text-black dark:bg-primary-600 dark:hover:bg-primary-700">View resume</button>
