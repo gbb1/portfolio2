@@ -22,10 +22,9 @@ const Job = ({ image, company, descriptions, title, dateRange }) => {
             }
           </div>
         </div>
-        {/* <div className="font-bold text-lg">{company}</div> */}
         <div className="flex flex-row justify-between w-full">
-          <div className="text-[12px] md:text-base">{title}</div>
-          <div className="text-[12px] md:text-base">{dateRange}</div>
+          <div className="text-[12px] md:text-base font-light">{title}</div>
+          <div className="text-[12px] md:text-base font-light">{dateRange}</div>
         </div>
       </div>
     </div>

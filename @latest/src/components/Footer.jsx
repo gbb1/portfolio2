@@ -8,8 +8,6 @@ import '../App.css';
 
 const Footer = ({ scroller }) => {
 
-  // console.log('ref', topRef);
-
   return (
     <div className="w-full bg-transparent flex justify-center flex-col mb-10 shadow-lg">
 
@@ -32,17 +30,6 @@ const Footer = ({ scroller }) => {
           <BsArrowUpCircle style={{ fontSize: '32px' }} />
         </div>
 
-        {/* <div className="flex flex-row w-full items-center justify-between h-min gap-2">
-
-          <div className="">
-            Designed by Gabe Bennett-Brandt
-          </div>
-
-          <div className="text-24 self-center" onClick={scroller}>
-            <BsArrowUpCircle style={{ fontSize: '24px' }} />
-          </div>
-
-        </div> */}
 
       </div>
     </div>

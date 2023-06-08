@@ -16,17 +16,10 @@ const Survey = () => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    // console.log(event.target.id)
     if (choice === null) {
       setChoice(Number(event.target.id))
     }
   }
-
-  useEffect(() => {
-    console.log(choice);
-  }, [choice])
-
-
 
   return (
     <div className="flex flex-col gap-2 w-full bg-white rounded-[20px] shadow-lg p-4 md:p-6">
