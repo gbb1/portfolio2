@@ -10,7 +10,7 @@ export default function HackReactor() {
   return (
     <div className="flex flex-col w-full bg-white rounded-[20px] shadow-lg p-4 md:p-6 gap-2">
       <div className="font-normal text-base md:text-2xl mb-2 mt-2">
-        That gap in my resume was caused by...
+        I just graduated from...
       </div>
       <Job image={HR} company={"Hack Reactor"} descriptions={['Bootcamp', 'AGILE']} title={'Software Engineer'} dateRange={'2022 - 2023'} />
     </div>

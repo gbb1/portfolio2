@@ -8,10 +8,10 @@ import { fadeIn, textVariant } from '../utils/motion';
 import '../App.css';
 
 
-export default function Project({ image, tags, flip, title, description }) {
+export default function Project({ prompt, image, tags, flip, title, description, link }) {
   return (
     <div className="flex flex-col w-full">
-      <div className={`flex flex-col gap-2 bg-white rounded-[20px] w-full shadow-lg p-6`}>
+      <div className={`flex flex-col gap-2 bg-white rounded-[20px] w-full shadow-lg p-4 md:p-6`}>
 
           {/* <div className="bg-white rounded-[20px] w-[50%] shadow-lg p-6"> */}
             {/* <div className="w-fullrounded-[20px] shadow-lg">
@@ -45,28 +45,54 @@ export default function Project({ image, tags, flip, title, description }) {
           </Tilt>
         </div> */}
 
-          <img src={image} className="rounded-lg shadow-lg" />
+        <div className="font-normal text-base md:text-2xl mb-2 mt-2">
+          {prompt}
+        </div>
 
-          <div className="flex flex-row gap-2 w-full mt-3">
+        <div className="font-bold text-md md:text-2xl mb-0">
+            {title}
+          </div>
+
+        {/* <div className="flex flex-row gap-2 w-full mt-0 mb-2">
             {
               tags.map((t, i) => {
                 return (
-                  <div key={t[0] + ',' + i} className="badge">{t}</div>
+                  <div key={t[0] + ',' + i} className="badge text-[10px] md:text-[16px]">{t}</div>
+                )
+              })
+            }
+          </div> */}
+
+
+
+          <img src={image} className="rounded-lg shadow-lg" />
+
+          {/* <div className="font-bold text-2xl mb-2">
+            {title}
+          </div> */}
+          <div className="flex flex-row gap-2 w-full mt-2">
+            {
+              tags.map((t, i) => {
+                return (
+                  <div key={t[0] + ',' + i} className="badge text-[10px] md:text-[16px]">{t}</div>
                 )
               })
             }
           </div>
 
-          <div className="font-bold text-2xl mb-2">
-            {title}
-          </div>
-
-          <div className="font-normal text-xl mb-2 -mt-2">
+          <div className="font-normal text-[12px] md:text-xl mb-2 ">
             {description}
           </div>
 
-          <button className="btn w-[10vw] self-end rounded-[1000px] bg-black">See details</button>
-
+          {
+            link.length > 0
+              ? <button className="bg-black text-[12px] md:text-sm px-4 py-2 md:px-3 md:py-3 text-white hover:bg-green-400 hover:text-black transition-all self-end rounded-[1000px] bg-black">
+                  <a href={`${link}`}>
+                    See details
+                  </a>
+                </button>
+              : <button className="disabled opacity-70 bg-gray-200 text-[12px] md:text-sm px-4 py-2 md:px-3 md:py-3 text-black hover:bg-gray-400 text-black transition-all self-end rounded-[1000px] bg-black">Launching soon!</button>
+          }
         {/* <div className="bg-white rounded-[20px] w-full shadow-lg p-6 flex flex-col">
 
           <img src={image} className="rounded-lg" />

@@ -7,12 +7,12 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 
 import '../App.css';
-import Profile from '../assets/profile.png'
-import Overview from '../assets/overview3.png'
+import Profile from '../assets/ProfileNew.png'
+import Overview from '../assets/OverviewBlank.png'
 import Hooks from '../assets/hooks.png'
 import Attenda from '../assets/attendaLogo.png'
-import Icons from '../assets/icons2.png'
-import Diggr from '../assets/diggr.png'
+import Icons from '../assets/icons3.png'
+import Diggr from '../assets/diggr2.png'
 
 const AboutMe = ({ scroller4 }) => {
   return (
@@ -28,7 +28,7 @@ const AboutMe = ({ scroller4 }) => {
         <div className = "flex flex-row justify-between gap-2 hover:gap-6 md:h-[25vh] ">
           {/*  */}
           <div className="w-[33%] rounded-[20px]">
-            <Tilt className="w-full h-full rounded-[20px] shadow-lg">
+            <Tilt className="w-full h-full rounded-[20px] ">
 
               <img
                 options={{
@@ -37,7 +37,7 @@ const AboutMe = ({ scroller4 }) => {
                   speed: 30,
                 }}
                 src={Profile}
-                className="rounded-[20px] w-full h-full object-cover shadow-lg"
+                className="rounded-[20px] bg-black w-full h-full object-cover "
               />
 
             </Tilt>
@@ -52,7 +52,7 @@ const AboutMe = ({ scroller4 }) => {
                 speed: 30,
               }}
               src={Overview}
-              className="rounded-[20px] w-full h-full object-cover"
+              className="rounded-[20px] bg-black w-full h-full object-cover"
             />
 
           </Tilt>
@@ -69,7 +69,7 @@ const AboutMe = ({ scroller4 }) => {
                   speed: 30,
                 }}
                 src={Diggr}
-                className="rounded-[20px] w-full h-full object-cover"
+                className="rounded-[20px] bg-black w-full h-full object-cover"
               />
 
           </Tilt>
@@ -84,7 +84,7 @@ const AboutMe = ({ scroller4 }) => {
                 }}
                 onClick={scroller4}
                 src={Icons}
-                className="rounded-[20px] w-full h-full object-cover"
+                className="rounded-[20px] w-full bg-black h-full object-cover"
               />
 
             </Tilt>
